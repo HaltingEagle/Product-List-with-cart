@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'customItalic';
+  src: url('../public/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'customBold';
+  src: url('../public/assets/fonts/static/RedHatText-Bold.ttf') format('truetype');
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.product-item {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.product-item img {
+  border-radius: 10px;
+}
+
+.product-item button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(39, 100%, 50%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.product-item button:hover{
+  background-color: hsl(39, 100%, 40%);
+
+}
+
+.product-category{
+  color: lightgray;
+}
+
+.product-price{
+  font-family: customBold;
+  color: darkorange;
+}
+
+.cart {
+  width: 300px;
+  height: fit-content;
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.desserts-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-name {
+  margin-bottom: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.item-quantity-price {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-price {
+  margin-left: 10px;
+  color: lightgray;
+  font-family: customItalic;
+}
+
+.item-quantity {
+  color: darkorange;
+  margin-right: 10px;
+  font-family: customBold;
+}
+
+.item-sum-price {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  font-family: customBold;
+  font-size: larger;
+  color: black;
+}
+
+.remove-item {
+  border: 2px solid hsl(0, 0%, 83%);
+  padding: 2px;
+  border-radius: 50%;
+  height: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+
+.remove-item:hover {
+  border: 3px solid hsl(0, 0%, 83%);
+}
+
+.empty-cart-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty-cart-p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carbon-container {
+  display: flex;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.carbon-neutral {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order-total-payment {
+  font-size: x-large;
+  font-family: customBold;
+  margin-right: 10px;
+}
+
+.checkout-button {
+  font-size: 20px;
+  font-family: customBold;
+  background-color: orange;
+  justify-content: center;
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.checkout-button:hover{
+  background-color: hsl(39, 100%, 40%);
+}
+
+
+.bought-items {
+    background-color: #f0f0f0; /* Light gray background for the card */
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.bought-items ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bought-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.modal-item-image {
+  width: 70px; /* Adjust size as needed */
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cart {
+    width: 100%;
+    padding: 10px;
+  }
+}
