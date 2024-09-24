@@ -14,9 +14,8 @@
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 350px;
 }
 
 .product-list {
@@ -229,13 +228,12 @@
 
 @media (max-width: 768px) {
   .content {
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .cart {
-    width: 100%;
-    padding: 10px;
+  .cart{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
